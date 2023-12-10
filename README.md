@@ -1,58 +1,39 @@
-Bookshelf API
-Description
-This repository contains the source code for a simple bookshelf API. It provides endpoints for managing books, including adding, retrieving, updating, and deleting book information.
 
-Installation
-Clone the repository:
+# BookShelf API
 
-bash
-Copy code
-git clone <repository-url>
-Install dependencies:
+This repository contains the source code for the bookshelf-api, a simple API for managing books. It is built using Node.js and Hapi.js, with additional tools like ESLint for code linting and Nodemon for development.
 
-bash
-Copy code
+
+
+
+## Installation
+
+Install my-project with npm
+
+```bash
+git clone
+cd bookshelf-api
 npm install
-Usage
-To start the server, use the following command:
+```
+    
+## Usage
 
-bash
-Copy code
-npm start
-For development with auto-restart on file changes, use:
+ To run the API, use the following command:
 
-bash
-Copy code
+```bash
+npm run start
 npm run start-dev
-API Endpoints
-1. Add a new book
-Endpoint: POST /books
-Handler: addNewBook
-2. Get all books
-Endpoint: GET /books
-Handler: getAllBooksHandler
-3. Get a book by ID
-Endpoint: GET /books/{id}
-Handler: getBookByIdHandler
-4. Edit a book by ID
-Endpoint: PUT /books/{id}
-Handler: editBookByIdHandler
-5. Delete a book by ID
-Endpoint: DELETE /books/{id}
-Handler: deleteBookIdHandler
-Scripts
-Linting: To lint the source code, run:
+```
+    
+## Acknowledgements
+The API provides the following routes:
+ - `POST /books` : Add a new books
+ - `GET /books` : Get all books
+ - `PUT /books/{id}` : Edit a spesific book by ID
+ - `DELETE /books/{id}` : Delete  a spesific book by ID
 
-bash
-Copy code
-npm run lint
-Dependencies
-@hapi/hapi: Version ^21.3.2
-nanoid: Version ^3.3.7
-Dev Dependencies
-eslint: Version ^8.55.0
-eslint-config-airbnb-base: Version ^15.0.0
-eslint-plugin-import: Version ^2.29.0
-nodemon: Version ^3.0.2
-License
-This project is licensed under the ISC License - see the LICENSE.md file for details.
+
+## Authors
+
+- [@mchafiz](https://www.github.com/mchafiz)
+
